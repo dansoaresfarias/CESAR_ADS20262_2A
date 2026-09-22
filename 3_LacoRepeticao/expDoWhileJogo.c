@@ -13,10 +13,11 @@ int main()
 
     do {
         system("cls");
+        tentativas = 0;
         secreto = rand() % 26 + 'a';
         printf("\nDigite uma letra (a - z): \n");
         while((resp = getche()) != secreto){
-            printf("Incorreto tente novamente!");
+            printf("\nIncorreto tente novamente!");
             tentativas++;
             printf("\nDigite uma letra (a - z): \n");
         }
