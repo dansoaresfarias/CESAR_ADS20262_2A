@@ -12,17 +12,26 @@ int main(){
     do{
         int soma = 0;
         system("cls");
-        do
-        {
+        do{
             printf("Digite um número inteiro positivo: ");
             scanf("%d", &n);
+            if (n < 0){
+                printf("Número %d inválido. Digite novamente.\n", n);
+            }
         } while (n < 0);
+
+        printf("O valor de %d² = ", n);
 
         for (int i = 0; i < n; i++){
             soma += (2 * i + 1);
+            if(i == n-1){
+                printf("%d ", (2 * i + 1));
+            }else{
+                printf("%d + ", (2 * i + 1));
+            }
         }
 
-        printf("O valor de %d^2 = %d\n\n", n, soma);
+        printf("= %d\n\n", soma);
 
         printf("Deseja rodar o programa novamente? (s-sim/n-não): ");
         scanf(" %c", &ch);
