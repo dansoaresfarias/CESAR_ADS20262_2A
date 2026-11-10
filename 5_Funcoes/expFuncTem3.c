@@ -5,7 +5,7 @@
 // 3ª declarar as funções em uma biblioteca de funções (arquivo .h) e definir as funções em um arquivo .c separado. O arquivo .h é incluído no arquivo principal com a diretiva #include.
 #include "convTemp.h"
 
-int main(){
+void main(){
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
     float temp;
@@ -60,5 +60,4 @@ int main(){
     }while(aux == 's' || aux == 'S');
 
     system("PAUSE");
-    return 0;
 }
