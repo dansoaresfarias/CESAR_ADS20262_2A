@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
+/*
 struct Aluno{
     int matricula;
     char nome[50];
@@ -9,7 +10,17 @@ struct Aluno{
     float media;
 };
 
-typedef struct Aluno AlunoCesar;
+typedef struct Aluno AlunoCesar; 
+*/
+
+
+typedef struct{
+    int matricula;
+    char nome[50];
+    float notas[3];
+    float media;
+} AlunoCesar;
+
 
 int main(){
     SetConsoleOutputCP(CP_UTF8);
